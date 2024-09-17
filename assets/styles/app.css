@@ -1,0 +1,144 @@
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face {
+  font-family: "Figtree";
+  src: url(../fonts/Figtree-VariableFont_wght.ttf);
+}
+
+body {
+  background-color: rgb(244, 208, 78);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+
+.card {
+  width: 384px;
+  border-radius: 20px;
+  background: white;
+  box-shadow: 7px 7px black;
+  padding: 24px;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.card-img {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.text-block {
+  margin: 24px 0;
+}
+
+
+.tag {
+  display: inline-block;
+  padding: 0 12px;
+  background-color: #f4d04e;
+  font: 14px/29px 'Figtree';
+  border-radius: 4px;
+  font-weight: 800;
+}
+
+.data {
+  font: 14px/100% 'Figtree';
+}
+.heading {
+  font: 24px/150% 'Figtree';
+  font-weight: 800;
+}
+
+.heading:hover {
+  color: #f4d04e;
+}
+
+.description {
+  color: #6b6b6b;
+  font: 16px/150% 'Figtree';
+}
+
+.label-avatar {
+  box-sizing: border-box;
+  height: 32px;
+  display: flex;
+  font: 14px/32px 'Figtree';
+  font-weight: 800;
+}
+
+.image-avatar {
+  margin-right: 12px;
+}
+
+.text-block-chld:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+@media (max-width: 600px) {
+  .card {
+    width: 327px;
+  }
+
+  .tag {
+    font-size: 12px;
+  }
+  
+  .data {
+    font-size: 12px;
+  }
+  .heading {
+    font-size: 20px;
+  }
+  
+  .description {
+    font-size: 14px;
+
+  }
+  
+  .label-avatar {
+    font-size: 12px;
+  }
+}
